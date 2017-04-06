@@ -1,0 +1,19 @@
+<div class="popup-content" data-ng-class="{'center': itemList.length < 4}">
+	<div class="container clrp">
+		<div class="row">
+			<div class="col-md-3" data-ng-repeat="item in itemList">
+				<div class="card mt1 curPoi" data-popup-close>
+					<div class="img-wrap small">
+						<img data-ng-src="{{item.image}}" alt="{{item.title}}">
+					</div>
+					<h3 class="label mt0">{{item.title}}</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button type="button"
+		data-popup-close
+		class="btn material popup-close">
+		<i class="fa fa-times"></i>
+	</button>	
+</div>	

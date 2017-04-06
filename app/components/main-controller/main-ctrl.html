@@ -1,0 +1,238 @@
+<div class="container center">
+	<div class="row">
+		<div class="col-md-12">
+				<h1 class="mt2">Hello, start writing code!</h1>
+				<p class="subtitle">This initial build is designed to quickly launch application development on angular.js</p>
+
+
+		</div>
+		<div class="col-md-6">
+			<div class="card custom-scroll">
+				<div class="mb2">
+					<p class="mb1">Default button class="btn"</p>
+					<button type="button" 
+						class="btn"
+						title="test popup button"
+						data-popup-btn
+						data-popup-block="popup-items"
+						data-ng-click="loadItems()">
+						popup test
+					</button>
+					<button type="button" 
+						class="btn"
+						disabled
+						title="test popup button">
+						popup test
+					</button>
+				</div>
+				<div class="mb2">
+					<p class="mb1">Full width button class="btn full"</p>
+					<button type="button" class="btn full" title="test button">
+						Lorem ipsum dolor sit amet
+					</button>
+				</div>
+				<div class="mb2">
+					<p class="mb1">Button material class="btn material"</p>
+					<button type="button" class="btn material">
+						<i class="fa fa-check"></i>
+					</button>
+					<button type="button" class="btn material" disabled>
+						<i class="fa fa-check"></i>
+					</button>
+				</div>
+				<div class="mb2">
+					<p class="mb1">Button material class="btn material small"</p>
+					<button type="button" class="btn material small">
+						<i class="fa fa-check"></i>
+					</button>
+					<button type="button" class="btn material small" disabled>
+						<i class="fa fa-check"></i>
+					</button>
+				</div>
+				<div class="mb2">
+					<p class="mb1">Button multiple class="btn multiple"</p>
+					<button type="button" class="btn multiple">
+						multiple
+						<span></span>
+					</button>
+					<button type="button" class="btn multiple" disabled>
+						multiple
+						<span></span>
+					</button>
+				</div>
+				<div class="mb2">
+					<p class="mb1">Button multiple small class="btn multiple small"</p>
+					<button type="button" class="btn multiple small">
+						<i class="fa fa-check"></i>
+						<span></span>
+					</button>
+					<button type="button" class="btn multiple small" disabled>
+						<i class="fa fa-check"></i>
+						<span></span>
+					</button>
+				</div>
+				
+				<p class="mb1">Over elements example</p>
+				<div class="container-fluid" style="height:120px">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="animation-arrow">
+								<div class="arrow-anim arrow-1"></div>
+								<div class="arrow-anim arrow-2"></div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="preloader-wrap active" style="height:100px">
+								<div class="preloader css"></div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="preloader-wrap active" style="height:100px">
+								<div class="preloader gif">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>				
+
+				<hr>
+				<p class="mb1">Table example</p>
+				<div class="table">
+					<ul class="table-head">
+						<li> <span>Properties</span></li>
+						<li> <span>Value</span></li>
+						<li> <span>Type</span></li>
+						<li> <span>Description</span></li>
+					</ul>
+					<ul class="table-body">
+						<li> <span>figure</span></li>
+						<li> <span>hexagon</span></li>
+						<li> <span>String</span></li>
+						<li> <span>Lorem ipsum dolor.</span></li>
+					</ul>
+					<ul class="table-body">
+						<li> <span>figure</span></li>
+						<li> <span>hexagon</span></li>
+						<li> <span>String</span></li>
+						<li> <span>Lorem ipsum dolor.</span></li>
+					</ul>
+					<ul class="table-body">
+						<li> <span>figure</span></li>
+						<li> <span>hexagon</span></li>
+						<li> <span>String</span></li>
+						<li> <span>Lorem ipsum dolor.</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="card custom-scroll">
+				<p class="mb1">Forms example</p>	
+			  
+				<div class="form-group">
+					<input type="text" name="fancy-text"/>
+					<label for="fancy-text">Name</label>
+				</div>
+				<div class="form-group">
+					<textarea name="fancy-textarea"></textarea>
+					<label for="fancy-textarea">Description</label>
+				</div>
+
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6">
+							<p class="mb1">Checkbox example</p>
+							<div class="form-group">
+								<input type="checkbox" name="fancy-checkbox" id="fancy-checkbox"/>
+								<label for="fancy-checkbox">Checkbox</label>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<p class="mb1">Radio button example</p>
+							<div class="form-group">
+								<input type="radio" name="fancy-radio" id="radio-1" checked />
+								<label for="radio-1">Radio</label>
+								<input type="radio" name="fancy-radio" id="radio-2"/>
+								<label for="radio-2">Radio</label>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="range-wrap">
+								<p class="mb1">Range input example</p>
+								<button type="button" 
+									class="btn material small"
+									required
+									data-ng-disabled="range < 1"
+									data-ng-click="range=range-1">
+									<i class="fa fa-minus"></i>
+								</button>
+								<input type="range" 
+									class="inline-block" 
+									min="0" 
+									max="100"
+									step="1"
+									required
+									data-ng-model="range">
+								<button 
+									type="button" 
+									class="btn material small"
+									required
+									data-ng-disabled="range > 99"
+									data-ng-click="range=range-0+1">
+									<i class="fa fa-plus"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<p class="mb1">Upload input type file example</p>
+							<div class="file-wrap" >
+								<label for="inputFileToLoad">
+									<i title="upload" class="fa fa-cloud-upload"></i>
+								</label>
+								<input type="file" id="inputFileToLoad" accept="image/jpeg,image/png" onchange="angular.element(this).scope().uploadFile()">
+							</div>							
+						</div>						
+					</div>
+				</div>
+
+				<hr>
+					<div class="left">
+						<p class="robotoLight small">class "robotoLight small"</p>	
+						<p class="robotoLight">class "robotoLight"</p>
+						<p class="robotoLight normal">class "robotoLight normal"</p>
+						<p class="robotoLight big">class "robotoLight big"</p>
+					</div>
+				<hr>
+					<div class="left">
+						<p class="robotoRegular small">class "robotoRegular small"</p>	
+						<p class="robotoRegular">class "robotoRegular"</p>
+						<p class="robotoRegular normal">class "robotoRegular normal"</p>
+						<p class="robotoRegular big">class "robotoRegular big"</p>
+					</div>
+				<hr>
+					<div class="left">
+						<p class="centuryGothic small">class "centuryGothic small"</p>		
+						<p class="centuryGothic">class "centuryGothic"</p>
+						<p class="centuryGothic normal">class "centuryGothic normal"</p>
+						<p class="centuryGothic big">class "centuryGothic big"</p>
+					</div>
+				<hr>
+				<div class="left">
+						<p class="openSans small">class "openSans small"</p>		
+						<p class="openSans">class "openSans"</p>
+						<p class="openSans normal">class "openSans normal"</p>
+						<p class="openSans big">class "openSans big"</p>
+					</div>
+				<hr>
+			</div>
+			
+
+		</div>
+	</div>
+</div>
+<div id="popup-items" 
+	class="popup"
+	data-ng-include src="'components/directives/popup-items-template.html'">
+</div>

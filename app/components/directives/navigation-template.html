@@ -1,0 +1,25 @@
+	<button type="button" 
+		class="mob-button"
+		data-ng-class="{'active': showMenu}"
+		data-ng-click="showMenu = !showMenu">
+		<span></span>
+		<span></span>
+		<span></span>
+	</button>
+<div class="nav-wrap" data-ng-class="{'active': showMenu}">
+	<a href="#/" class="logo">
+		<img src="../../assets/img/logo-2.png" alt="logo">
+	</a>
+
+	<ul class="navigation right" auto-active>            
+		<li>
+			<a href="#/">Home</a>
+		</li>
+		<li>
+			<a href="#/page-one">Page one</a>
+		</li>
+		<li>
+			<a href="#/page-two">Page two</a>
+		</li>		
+	</ul>
+</div>
