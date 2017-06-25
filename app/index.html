@@ -25,7 +25,7 @@
 	</div>
 	
 	<header>		
-		<navigation></navigation>
+		<navigation data-ng-if="appConfig.user"></navigation>		
 	</header>
 
 	<main>
@@ -83,6 +83,7 @@
 	<!-- endbuild -->
 	
 	<!-- build:js js/contollers.min.js -->
+	<script src="components/authorizatio-controller/authorization-contoller.js"></script>	
 	<script src="components/main-controller/main-ctrl.js"></script>	
 	<!-- endbuild -->
 
@@ -96,6 +97,7 @@
 	<!-- endbuild -->
 
 	<!-- build:js js/services.min.js -->
+	<script src="components/services/authentication-service.js"></script>
 	<script src="components/services/services.js"></script>
 	<!-- endbuild -->  
 

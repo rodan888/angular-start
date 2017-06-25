@@ -241,6 +241,23 @@ input,textarea,button
 			@include transition(bottom 0.3s)	
 // Button end--------------------------------
 
+// Login form block--------------------------
+.login-block
+	position: relative
+	height: calc(100vh - 54px)
+	img
+		width: 170px
+		margin-bottom: 20px	
+	.login-content
+		position: absolute
+		top: 45%
+		left: 50%
+		@include transform(translate(-50%,-50%))
+		form
+			min-width: 500px
+			padding: 0
+// Login form block--------------------------
+
 // Table start-------------------------------
 .table 
 	ul
@@ -563,7 +580,6 @@ footer
 	min-height: 5vh	
 	color: $white		
 	width: 100%
-	background-color: $black
 	z-index: 1000
 	.copy 
 		position: absolute
@@ -572,6 +588,7 @@ footer
 		left: 0
 		width: 100%
 		line-height: 50px
+		background-color: $black
 		a
 			color: $white
 			span
